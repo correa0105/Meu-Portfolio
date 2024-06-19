@@ -41,7 +41,7 @@ export default function SectionApresentation() {
       <div className="d-flex">
         <Hover3DEffect
           className="py-4 px-5 mt-5"
-          text="Confira meus certificados!"
+          text="Confira Meus Certificados!"
           link="https://docs.google.com/document/d/1x0tm0wLbqmLst5LkGAVdMPnpKwarnJB3ZHuVG_nWBuU/edit?usp=sharing"
         />
       </div>
