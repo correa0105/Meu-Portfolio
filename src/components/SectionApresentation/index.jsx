@@ -23,7 +23,7 @@ export default function SectionApresentation() {
   return (
     <Section className="d-flex flex-column justify-content-center my-0 mx-auto" ref={sectionRef}>
       <div>
-        <h1>This.</h1>
+        <h1>Seja bem-vindo,</h1>
       </div>
       <div>
         <h2>Lucas Corrêa.</h2>
@@ -35,7 +35,7 @@ export default function SectionApresentation() {
         <p>
           Como desenvolvedor, meu foco é criar soluções robustas e escaláveis, com base em princípios sólidos de programação e design. Estou sempre
           aberto a desafios e colaboração em equipe, buscando oportunidades para aprender e crescer profissionalmente, estou constantemente pronto
-          para enfrentar novas oportunidades e <span className="text-highlighted">superar expectativas</span>.
+          para enfrentar novos desafios e <span className="text-highlighted">superar expectativas</span>.
         </p>
       </div>
       <div className="d-flex">

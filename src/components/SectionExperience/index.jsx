@@ -43,7 +43,7 @@ export default function App() {
       },
     });
 
-    tl.from(sectionElement, { opacity: 0, duration: 2.5 });
+    tl.from(sectionElement, { opacity: 0, y: 50, duration: 0.5 });
   });
 
   useEffect(() => {

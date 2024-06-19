@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Section } from './style';
 import HeadingSection from '../HeadingSection';
 import Card from '../Card';
+import Hover3DEffect from '../Hover3DEffect';
 
 export default function SectionProjects() {
   const listRef = useRef(null);
@@ -112,15 +113,9 @@ export default function SectionProjects() {
           />
         </li>
       </ul>
-      <a
-        ref={viewMoreRef}
-        className="text-highlighted view-more"
-        href="https://github.com/correa0105?tab=repositories"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Ver mais...
-      </a>
+      <div className="d-flex justify-content-end" ref={viewMoreRef}>
+        <Hover3DEffect className="px-4 py-3" link="https://github.com/correa0105?tab=repositories" text="Veja Mais..." />
+      </div>
     </Section>
   );
 }
