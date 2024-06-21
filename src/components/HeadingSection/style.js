@@ -8,6 +8,7 @@ export const SectionHeadingContainer = styled.h2`
     position: relative;
     display: flex;
     align-items: baseline;
+    white-space: nowrap;
 
     &::before {
         content: "0" counter(section) ".";
@@ -27,5 +28,11 @@ export const SectionHeadingContainer = styled.h2`
         width: 300px;
         height: 1px;
         background-color: #502714;
+    }
+
+    @media (max-width: 768px) {
+        &::after {
+        width: 15rem;
+        }
     }
 `;

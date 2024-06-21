@@ -19,4 +19,8 @@ export const Section = styled.section`
     span a:hover {
         color: var(--color-primary);
     }
+
+    @media (max-width: 768px) {
+        margin-top: 15rem;
+    }
 `;

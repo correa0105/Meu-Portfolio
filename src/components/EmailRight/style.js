@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 export const SocialListContainer = styled.ul`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 2.5    rem;
+
+
     &::after {
         content: '';
         position: relative;
@@ -16,5 +25,9 @@ export const SocialListContainer = styled.ul`
         font-family: var(--font-mono);
         font-size: 1.4rem;
         font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 `;

@@ -24,7 +24,7 @@ export default function EmailRight() {
     };
   }, []);
   return (
-    <SocialListContainer className="d-flex flex-column justify-content-center align-items-center gap-4 p-0 m-0">
+    <SocialListContainer>
       <a href="mailto:correa.l@icloud.com" ref={linkRef}>
         correa.l@icloud.com
       </a>

@@ -3,11 +3,19 @@ import styled from 'styled-components';
 export const Section = styled.section`
     max-width: 70rem;
     margin-top: 24rem;
+
+    @media (max-width: 768px) {
+      margin-top: 10rem;
+    }
 `;
 
 export const Container = styled.div`
   display: flex;
   width: 100%;
+  @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
 `;
 
 export const MenuContainer = styled.div`

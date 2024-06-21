@@ -79,4 +79,16 @@ export const Section = styled.section`
             transform: translate(3px, 3px);
         }
     }
+
+    @media (max-width: 768px) {
+        .img-container {
+            margin-top: 3rem;
+            width: 95%;
+
+            &::after {
+                top: 8px;
+                left: 8px;
+            }
+        }
+    }
 `;

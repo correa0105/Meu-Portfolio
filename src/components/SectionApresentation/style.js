@@ -29,7 +29,7 @@ export const Section = styled.section`
     }
 
     p {
-        width: 70%;
+        max-width: 80rem;
         margin: 1.5rem 0 1rem 0;
         font-family: var(--font-sans);
         font-weight: 400;
@@ -40,4 +40,19 @@ export const Section = styled.section`
     a {
         font-size: 1.4rem;
     }
+
+    @media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        margin: -1rem 0 0 0;
+        font-size: 4rem;
+    }
+}
 `;

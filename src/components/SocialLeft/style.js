@@ -21,4 +21,8 @@ export const SocialListContainer = styled.ul`
     a {
         color: var(--color-gray);
     }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;

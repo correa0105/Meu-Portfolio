@@ -77,7 +77,7 @@ export default function SectionAbout() {
           </ul>
         </div>
         <div className="col-md-5">
-          <div className="img-container my-0 mx-auto">
+          <div className="img-container mx-auto">
             <img src="Lucas.png" alt="" />
           </div>
         </div>

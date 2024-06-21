@@ -92,11 +92,11 @@ export default function Header() {
 
   return (
     <HeaderContainer id="header" className="d-flex justify-content-between align-items-center w-100" isTop={isTop}>
-      <div className="d-flex">
+      <div className="container-text-typing">
         <h1 id="text-typing"> </h1>
         <Cursor id="cursor" />
       </div>
-      <nav className="d-flex gap-4 align-items-center">
+      <nav className="gap-4 align-items-center nav-menu">
         <ol className="d-flex align-items-center gap-5 p-0 m-0">
           <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
           <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />

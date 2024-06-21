@@ -20,7 +20,7 @@ export default function SectionFooter() {
     });
 
     tl.from(sectionElement, {
-      xPercent: 50,
+      x: 30,
       opacity: 0,
       delay: 0.1,
     });

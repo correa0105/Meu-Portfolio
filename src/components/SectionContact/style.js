@@ -24,6 +24,14 @@ export const Section = styled.section`
     a {
         font-size: 1.4rem;
     }
+
+    @media (max-width: 768px) {
+        margin-top: 15rem;
+
+        h3 {
+            font-size: 3.5rem;
+        }
+    }
 `;
 
 export const Title = styled.h2`

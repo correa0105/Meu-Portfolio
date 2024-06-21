@@ -16,6 +16,24 @@ export const HeaderContainer = styled.header`
         font-size: 1.5rem;
         font-weight: 400;
     }
+
+    .container-text-typing {
+      display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    @media (max-width: 728px) {
+    .container-text-typing {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    }
 `;
 
 export const Cursor = styled.span`
