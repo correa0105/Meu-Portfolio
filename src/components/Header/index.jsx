@@ -120,7 +120,7 @@ export default function Header() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="w-100 pb-4">
+            <Nav className="w-100 py-4">
               <ol className="d-flex flex-column align-items-center gap-5 p-0 m-0">
                 <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
                 <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />
