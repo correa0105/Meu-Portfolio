@@ -28,19 +28,18 @@ export default function SectionProjects() {
       },
     });
 
-    tl.from(sectionElement, { opacity: 1, duration: 0 })
-      .from(headingElement, {
-        opacity: 0,
-        y: -30,
-        duration: 0.3,
-      })
-      .from(listItems, {
-        opacity: 0,
-        y: 20,
-        duration: 0.5,
-        ease: 'power1.out',
-        stagger: 0.3,
-      })
+    tl.from(sectionElement, { opacity: 0, duration: 2 });
+    tl.from(headingElement, { x: -100, opacity: 0, duration: 1 }, '<')
+      .from(
+        listItems,
+        {
+          opacity: 0,
+          y: 20,
+          ease: 'power1.out',
+          stagger: 0.3,
+        },
+        '<',
+      )
       .from(viewMoreElement, {
         opacity: 0,
         y: 20,
@@ -52,16 +51,16 @@ export default function SectionProjects() {
 
   return (
     <Section id="Projects" ref={sectionRef} className="d-flex flex-column p-0 mx-auto">
-      <div className="d-flex flex-column" ref={headingRef}>
+      <div className="d-flex" ref={headingRef}>
         <HeadingSection text="Meus Projetos" />
-        <div className="paragraphy-projects mt-4">
-          <p>
-            Tenho mais de 60 repositórios no GitHub que cobrem tópicos essenciais para o desenvolvimento de software, incluindo padrões de projeto,
-            técnicas de desenvolvimento e aplicativos funcionais. Esses repositórios oferecem desde práticas recomendadas para código limpo até
-            estratégias avançadas de otimização e exemplos práticos em diversas linguagens e plataformas.
-          </p>
-          <span className="text-highlighted">Você pode verificar alguns abaixo</span>
-        </div>
+      </div>
+      <div className="paragraphy-projects mt-4">
+        <p>
+          Tenho mais de 60 repositórios no GitHub que cobrem tópicos essenciais para o desenvolvimento de software, incluindo padrões de projeto,
+          técnicas de desenvolvimento e aplicativos funcionais. Esses repositórios oferecem desde práticas recomendadas para código limpo até
+          estratégias avançadas de otimização e exemplos práticos em diversas linguagens e plataformas.
+        </p>
+        <span className="text-highlighted">Você pode verificar alguns abaixo</span>
       </div>
       <ul className="row p-0 mt-5" ref={listRef}>
         <li className="p-3 col-12 col-sm-6 col-md-4">

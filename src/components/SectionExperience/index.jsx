@@ -13,6 +13,7 @@ export default function App() {
   const menuRef = useRef(null);
   const scrollbarRef = useRef(null);
   const sectionRef = useRef(null);
+  const headingRef = useRef(null);
 
   const menuItems = useMemo(() => ['Cubic Solutions', 'Usina do Corpo', 'InterCement', 'Autônomo'], []);
 
@@ -35,6 +36,7 @@ export default function App() {
     gsap.registerPlugin(ScrollTrigger);
 
     const sectionElement = sectionRef.current;
+    const headingElement = headingRef.current;
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -43,7 +45,8 @@ export default function App() {
       },
     });
 
-    tl.from(sectionElement, { opacity: 0, y: 50, duration: 0.5 });
+    tl.from(sectionElement, { opacity: 0, duration: 2 });
+    tl.from(headingElement, { x: 100, opacity: 0, duration: 1 }, '<');
   });
 
   useEffect(() => {
@@ -53,7 +56,9 @@ export default function App() {
 
   return (
     <Section id="Experience" className="d-flex flex-column justify-content-center mx-auto" ref={sectionRef}>
-      <HeadingSection text="Experiência" />
+      <div className="d-flex" ref={headingRef}>
+        <HeadingSection text="Experiência" />
+      </div>
       <Container className="mt-5">
         <MenuContainer>
           <Menu ref={menuRef}>
@@ -76,20 +81,20 @@ export default function App() {
         <Content ref={contentRef}>
           {selectedMenuItem === 'Cubic Solutions' && (
             <Work date="Julho de 2023 - Abril de 2024" office="Gestor de TI" company="@ Cubic Solutions">
-              <WorkParagraphy text="Abrir minha empresa de infraestrutura de TI foi um marco significativo na minha carreira Aprendi a importância de uma comunicação clara e eficaz, a necessidade de adaptação rápida às demandas variadas de cada cliente e a gestão eficiente de recursos para manter a qualidade do serviço" />
-              <WorkParagraphy text="Atuei no controle de acesso, garantindo segurança física e digital, e realizei manutenção de hardware para assegurar desempenho ideal. Minha expertise incluía instalação e gestão de redes, servidores e roteamento, proporcionando uma infraestrutura robusta. Também implementei sistemas de ponto eletrônico e desenvolvi software personalizado, adaptando soluções às necessidades específicas de cada cliente para otimizar processos e aumentar a produtividade." />
+              <WorkParagraphy text="Abrir minha empresa de infraestrutura de TI marcou minha carreira. Aprendi a importância da comunicação eficaz, da adaptação rápida às demandas dos clientes e da gestão eficiente de recursos." />
+              <WorkParagraphy text="Implementei sistemas de controle de acessos, realizei manutenção de hardware, instalei e gerenciei redes, servidores e roteamento, proporcionando uma infraestrutura robusta. Também implementei sistemas de ponto eletrônico e desenvolvi software personalizado, adaptando soluções às necessidades específicas dos clientes para otimizar processos e aumentar a produtividade." />
             </Work>
           )}
           {selectedMenuItem === 'Usina do Corpo' && (
             <Work date="Outubro de 2019 - Março de 2023" office="Analista de Sistemas" company="@ Usina Do Corpo">
-              <WorkParagraphy text="Gerenciei toda a rede de computadores, implementei novos sistemas e resolvi problemas operacionais usando tecnologia avançada. Minhas responsabilidades incluíam a manutenção de hardware, controle de acesso com catracas eletrônicas e gerenciamento do servidor Windows Server." />
+              <WorkParagraphy text="Gerenciei toda a rede de computadores, implementei novos sistemas e resolvi problemas operacionais usando tecnologia avançada. Minhas responsabilidades incluíam a manutenção de hardware, controle de acesso com catracas eletrônicas e gerenciamento de servidor." />
               <WorkParagraphy text="Além disso, cuidei da manutenção do servidor Apache e desenvolvi soluções web utilizando HTML, CSS e JavaScript. Minha experiência em redes de computadores foi fundamental para assegurar a conectividade e a eficiência das operações diárias da empresa." />
             </Work>
           )}
           {selectedMenuItem === 'InterCement' && (
             <Work date="Novembro de 2018 - Outubro de 2019" office="Aux. Operatória de Manutenção" company="@ InterCement">
-              <WorkParagraphy text="Durante minha experiência como auxiliar de operações de manutenção, adquiri habilidades significativas em automação de escritório e elaboração de relatórios. Esta oportunidade me permitiu mergulhar no mundo da eficiência operacional, onde aprendi a otimizar processos e aprimorar a produtividade por meio da automação de tarefas rotineiras. Além disso, tive o privilégio de conhecer e trabalhar com o sistema SAP, uma plataforma amplamente utilizada em empresas multinacionais para integração de processos de negócios." />
-              <WorkParagraphy text="A experiência em uma empresa multinacional proporcionou-me uma visão mais ampla do ambiente corporativo, contribuindo para o desenvolvimento de uma postura profissional mais robusta. Aprendi a lidar com desafios complexos e a trabalhar em equipe de forma eficaz para alcançar objetivos comuns. Essa vivência também me permitiu entender a importância da organização e da precisão nos processos de trabalho, aspectos essenciais para o sucesso em um ambiente empresarial dinâmico e competitivo. Em suma, minha passagem como auxiliar de operações de manutenção foi fundamental para o meu crescimento profissional e para aprimorar minhas habilidades no mundo corporativo." />
+              <WorkParagraphy text="Como auxiliar de operações de manutenção, adquiri habilidades em automação de escritório e elaboração de relatórios, otimizando processos e aumentando a produtividade. Trabalhei com o sistema SAP, amplamente usado em empresas multinacionais para integrar processos de negócios." />
+              <WorkParagraphy text="Trabalhar em uma empresa multinacional ampliou minha visão do ambiente corporativo, fortalecendo minha postura profissional. Aprendi a enfrentar desafios complexos, trabalhar em equipe e valorizar a organização e precisão nos processos. Essa experiência foi essencial para meu crescimento profissional e aprimoramento no mundo corporativo." />
             </Work>
           )}
           {selectedMenuItem === 'Autônomo' && (

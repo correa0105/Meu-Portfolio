@@ -30,7 +30,7 @@ export default function SectionContact() {
   });
   return (
     <Section id="Contact" ref={sectionRef} className="d-flex flex-column align-items-center p-0 mx-auto">
-      <Title className="d-flex justify-content-center">Proximo Passo</Title>
+      <Title className="d-flex justify-content-center">Qual o Próximo Passo?</Title>
       <h3 className="mt-5">Fale Comigo!</h3>
       <p className="mt-4">
         Minha caixa de entrada está sempre aberta para receber mensagens. Se você tiver alguma dúvida, uma proposta interessante ou simplesmente

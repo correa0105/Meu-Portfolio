@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { TextPlugin } from 'gsap/TextPlugin';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import { HeaderContainer, Cursor } from './style';
 import ItemMenu from '../ItemMenu';
 import Hover3DEffect from '../Hover3DEffect';
@@ -92,21 +93,44 @@ export default function Header() {
 
   return (
     <HeaderContainer id="header" className="d-flex justify-content-between align-items-center w-100" isTop={isTop}>
-      <div className="container-text-typing">
-        <h1 id="text-typing"> </h1>
-        <Cursor id="cursor" />
-      </div>
-      <nav className="gap-4 align-items-center nav-menu">
-        <ol className="d-flex align-items-center gap-5 p-0 m-0">
-          <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
-          <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />
-          <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projetos" />
-          <ItemMenu onClick={scrollToContact} className="item-menu" text="Contato" />
-        </ol>
-        <div className="d-flex" ref={buttonRef}>
-          <Hover3DEffect className="ms-5 py-3 px-4" text="Curriculo" link="LucasCV.pdf" />
+      <div id="menu-desktop" className="justify-content-between align-items-center w-100">
+        <div className="container-text-typing">
+          <h1 id="text-typing"> </h1>
+          <Cursor id="cursor" />
         </div>
-      </nav>
+        <nav className="d-flex gap-4 align-items-center nav-menu">
+          <ol className="d-flex align-items-center gap-5 p-0 m-0">
+            <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
+            <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />
+            <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projetos" />
+            <ItemMenu onClick={scrollToContact} className="item-menu" text="Contato" />
+          </ol>
+          <div className="d-flex" ref={buttonRef}>
+            <Hover3DEffect className="ms-5 py-3 px-4" text="Curriculo" link="LucasCV.pdf" />
+          </div>
+        </nav>
+      </div>
+      <Navbar id="menu-mobile" className="bg-secondary px-2 py-3 w-100" variant="dark" expand="lg">
+        <Container>
+          <Navbar.Brand className="d-flex align-items-center gap-2">
+            <div className="container-text-typing">
+              <h1 id="text-typing"> </h1>
+              <Cursor id="cursor" />
+            </div>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="w-100 pb-4">
+              <ol className="d-flex flex-column align-items-center gap-5 p-0 m-0">
+                <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
+                <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />
+                <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projetos" />
+                <ItemMenu onClick={scrollToContact} className="item-menu" text="Contato" />
+              </ol>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </HeaderContainer>
   );
 }

@@ -36,8 +36,8 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
     font-family: var(--font-sans);
-    font-weight: 600;
-    font-size: 2.8rem;
+    font-weight: 400;
+    font-size: 2.5rem;
     color: var(--color-primary);
     position: relative;
     display: flex;

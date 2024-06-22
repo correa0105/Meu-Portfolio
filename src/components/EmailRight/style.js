@@ -7,7 +7,7 @@ export const SocialListContainer = styled.ul`
     flex-direction: column;
     padding: 0;
     margin: 0;
-    gap: 2.5    rem;
+    gap: 2.5rem;
 
 
     &::after {

@@ -9,30 +9,33 @@ export const HeaderContainer = styled.header`
     z-index: 1000;
     transition: all 0.3s;
     font-family: var(--font-mono);
-    padding: 0 5rem 0 5rem;
 
     #text-typing {
         color: var(--color-primary);
         font-size: 1.5rem;
         font-weight: 400;
+        margin: 0;
     }
 
     .container-text-typing {
       display: flex;
     }
 
-    .nav-menu {
-        display: flex;
+    #menu-desktop {
+      display: flex;
+      padding: 0 5rem 0 5rem;
     }
 
     @media (max-width: 728px) {
-    .container-text-typing {
-        display: none;
+    #menu-desktop {
+      display: none;
     }
 
-    .nav-menu {
-        display: none;
+    #text-typing {
+        font-size: 1.2rem;
     }
+
+    height: auto;
     }
 `;
 
@@ -48,5 +51,9 @@ export const Cursor = styled.span`
     50% {
       opacity: 0;
     }
+  }
+
+  @media (max-width: 728px) {
+    height: 1.4rem;
   }
 `;

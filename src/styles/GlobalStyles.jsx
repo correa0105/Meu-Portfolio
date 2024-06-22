@@ -10,11 +10,12 @@ export default createGlobalStyle`
         --color-slate: #502714;
         --font-mono: 'SF Mono';
         --font-sans: 'Calibre';
-/*         --color-primary: #64FFDA;
-        --color-dark: #0A192F;
-        --color-slate: #112240; */
         --color-gray: #ccd6f6;
         --color-slate-gray: #8892b0;
+    }
+
+    .bg-secondary {
+        background-color:#502714 !important;
     }
 
     html {
@@ -66,4 +67,13 @@ export default createGlobalStyle`
         background: var(--color-slate-gray);
     }
 
+    #menu-mobile {
+      display: none;
+    }
+
+    @media (max-width: 728px) {
+    #menu-mobile {
+      display: flex;
+    }
+    }
 `;
