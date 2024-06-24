@@ -66,14 +66,4 @@ export default createGlobalStyle`
     ::-webkit-scrollbar-thumb:hover {
         background: var(--color-slate-gray);
     }
-
-    #menu-mobile {
-      display: none;
-    }
-
-    @media (max-width: 728px) {
-    #menu-mobile {
-      display: flex;
-    }
-    }
 `;

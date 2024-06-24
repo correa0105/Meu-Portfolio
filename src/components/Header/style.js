@@ -26,9 +26,17 @@ export const HeaderContainer = styled.header`
       padding: 0 5rem 0 5rem;
     }
 
+    #menu-mobile {
+      display: none;
+    }
+
     @media (max-width: 728px) {
     #menu-desktop {
       display: none;
+    }
+
+    #menu-mobile {
+      display: flex;
     }
 
     #text-typing {

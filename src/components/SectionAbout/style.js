@@ -82,8 +82,8 @@ export const Section = styled.section`
 
     @media (max-width: 768px) {
         .img-container {
-            margin-top: 3rem;
-            width: 95%;
+            margin-top: 4rem;
+            width: 85%;
 
             &::after {
                 top: 8px;

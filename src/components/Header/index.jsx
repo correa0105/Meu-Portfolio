@@ -110,12 +110,11 @@ export default function Header() {
           </div>
         </nav>
       </div>
-      <Navbar id="menu-mobile" className="bg-secondary px-2 py-3 w-100" variant="dark" expand="lg">
+      <Navbar id="menu-mobile" className="bg-transparent px-2 py-3 w-100" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand className="d-flex align-items-center gap-2">
-            <div className="container-text-typing">
-              <h1 id="text-typing"> </h1>
-              <Cursor id="cursor" />
+            <div className="d-flex" ref={buttonRef}>
+              <Hover3DEffect className="py-2 px-3" text="Curriculo" link="LucasCV.pdf" />
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
