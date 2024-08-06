@@ -46,7 +46,7 @@ export default function App() {
     });
 
     tl.from(sectionElement, { opacity: 0, duration: 2 });
-    tl.from(headingElement, { x: 100, opacity: 0, duration: 1 }, '<');
+    tl.from(headingElement, { x: -100, opacity: 0, duration: 1 }, '<');
   });
 
   useEffect(() => {
