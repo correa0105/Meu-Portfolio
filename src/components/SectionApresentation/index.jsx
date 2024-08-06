@@ -29,13 +29,13 @@ export default function SectionApresentation() {
         <h2>Lucas Corrêa.</h2>
       </div>
       <div>
-        <h3>Desenvolvedor Web</h3>
+        <h3>Desenvolvedor de Software</h3>
       </div>
       <div>
         <p>
-          Como desenvolvedor, meu foco é criar soluções robustas e escaláveis, com base em princípios sólidos de programação e design. Estou sempre
-          aberto a desafios e colaboração em equipe, buscando oportunidades para aprender e crescer profissionalmente, estou constantemente pronto
-          para enfrentar novos desafios e <span className="text-highlighted">superar expectativas</span>.
+          Como desenvolvedor, meu foco é criar soluções robustas e escaláveis, fundamentadas em princípios sólidos de programação e design. Estou
+          sempre aberto a desafios e colaboração em equipe, buscando oportunidades para aprender e crescer profissionalmente. Além disso, estou
+          preparado para enfrentar novos desafios e <span className="text-highlighted">superar expectativas</span>.
         </p>
       </div>
       <div className="d-flex">

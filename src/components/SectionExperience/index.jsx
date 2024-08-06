@@ -15,7 +15,7 @@ export default function App() {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
 
-  const menuItems = useMemo(() => ['Cubic Solutions', 'Usina do Corpo', 'InterCement', 'Autônomo'], []);
+  const menuItems = useMemo(() => ['Klassmatt', 'Cubic Solutions', 'Usina do Corpo', 'InterCement', 'Autônomo'], []);
 
   const calculateScrollPosition = useCallback(() => {
     const selectedItemIndex = menuItems.indexOf(selectedMenuItem);
@@ -79,6 +79,12 @@ export default function App() {
           </Menu>
         </MenuContainer>
         <Content ref={contentRef}>
+          {selectedMenuItem === 'Klassmatt' && (
+            <Work date="Julho de 2024 - Atualmente" office="Estagio Desenvolvedor" company="@ Klassmatt">
+              <WorkParagraphy text="Implementação de funcionalidades e correções de bugs em aplicações escritas em VB, JavaScript e C#, atualizações de registro no banco de dados e criações de procedures." />
+              <WorkParagraphy text="Criação de procedures, relatórios, documentação e participação nas sprints." />
+            </Work>
+          )}
           {selectedMenuItem === 'Cubic Solutions' && (
             <Work date="Julho de 2023 - Abril de 2024" office="Gestor de TI" company="@ Cubic Solutions">
               <WorkParagraphy text="Abrir minha empresa de infraestrutura de TI marcou minha carreira. Aprendi a importância da comunicação eficaz, da adaptação rápida às demandas dos clientes e da gestão eficiente de recursos." />
@@ -92,7 +98,7 @@ export default function App() {
             </Work>
           )}
           {selectedMenuItem === 'InterCement' && (
-            <Work date="Novembro de 2018 - Outubro de 2019" office="Aux. Operatória de Manutenção" company="@ InterCement">
+            <Work date="Novembro de 2018 - Outubro de 2019" office="Aux. Op. Manutenção" company="@ InterCement">
               <WorkParagraphy text="Como auxiliar de operações de manutenção, adquiri habilidades em automação de escritório e elaboração de relatórios, otimizando processos e aumentando a produtividade. Trabalhei com o sistema SAP, amplamente usado em empresas multinacionais para integrar processos de negócios." />
               <WorkParagraphy text="Trabalhar em uma empresa multinacional ampliou minha visão do ambiente corporativo, fortalecendo minha postura profissional. Aprendi a enfrentar desafios complexos, trabalhar em equipe e valorizar a organização e precisão nos processos. Essa experiência foi essencial para meu crescimento profissional e aprimoramento no mundo corporativo." />
             </Work>

@@ -35,20 +35,12 @@ export default function SectionAbout() {
       <div className="row mt-5 align-items-start">
         <div className="col-md-7">
           <p>
-            Olá! Me chamo Lucas e <span className="text-highlighted">desde 2022</span> me dedico à programação, começando com a criação de uma
-            calculadora em Java responsavel por calcular o reembolso do cliente. Esse projeto foi fundamental para desenvolver minha habilidade em
-            lógica de programação e software.
+            Olá! Meu nome é Lucas e <span className="text-highlighted">desde 2022</span> me dedico à programação. Com mais de{' '}
+            <span className="text-highlighted">3 mil horas de experiência</span>, desenvolvi diversas aplicações e fundei uma empresa de
+            Infraestrutura de TI, atendendo 4 clientes e 28 lojas.
           </p>
-          <p>
-            Com mais de <span className="text-highlighted">3 mil horas de experiência</span>, desenvolvi várias aplicações web, incluindo sistemas de
-            gestão financeira e controle de chamados. Também fundei uma empresa de Infraestrutura de TI, atendendo 4 clientes e 28 lojas, o que
-            ampliou minha compreensão das necessidades empresariais.
-          </p>
-          <p>
-            Atualmente, foco no desenvolvimento web com NodeJS e React,{' '}
-            <span className="text-highlighted">criando soluções dinâmicas e eficientes</span> que se adaptam às demandas do mercado, sempre buscando
-            inovação.
-          </p>
+          <p>Essa experiência ampliou minha compreensão das necessidades empresariais e me permitiu entregar soluções de alto valor agregado.</p>
+          <p>Atualmente, foco na criação de soluções dinâmicas e eficientes que se adaptam às demandas do mercado, sempre buscando inovação.</p>
           <ul className="grid-skills">
             <li>
               <BiSolidRightArrow fontSize={10} color="#ff631a" />
@@ -68,7 +60,7 @@ export default function SectionAbout() {
             </li>
             <li>
               <BiSolidRightArrow fontSize={10} color="#ff631a" />
-              Redux
+              Java
             </li>
             <li>
               <BiSolidRightArrow fontSize={10} color="#ff631a" />
