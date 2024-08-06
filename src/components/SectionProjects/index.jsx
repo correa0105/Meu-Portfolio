@@ -52,7 +52,7 @@ export default function SectionProjects() {
   return (
     <Section id="Projects" ref={sectionRef} className="d-flex flex-column p-0 mx-auto">
       <div className="d-flex" ref={headingRef}>
-        <HeadingSection text="Projetos" />
+        <HeadingSection text="Meus Projetos" />
       </div>
       <div className="paragraphy-projects mt-4">
         <p>
