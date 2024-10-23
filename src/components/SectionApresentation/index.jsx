@@ -23,25 +23,25 @@ export default function SectionApresentation() {
   return (
     <Section className="d-flex flex-column justify-content-center my-0 mx-auto" ref={sectionRef}>
       <div>
-        <h1>Seja bem-vindo,</h1>
+        <h1>Hi, my name is</h1>
       </div>
       <div>
         <h2>Lucas Corrêa.</h2>
       </div>
       <div>
-        <h3>Desenvolvedor de Software</h3>
+        <h3>Software Developer</h3>
       </div>
       <div>
         <p>
-          Como desenvolvedor, meu foco é criar soluções robustas e escaláveis, fundamentadas em princípios sólidos de programação e design. Estou
-          sempre aberto a desafios e colaboração em equipe, buscando oportunidades para aprender e crescer profissionalmente. Além disso, estou
-          preparado para enfrentar novos desafios e <span className="text-highlighted">superar expectativas</span>.
+          As a developer, my focus is on creating robust and scalable solutions based on solid principles of programming and design. I am always open
+          to challenges and teamwork, seeking opportunities to learn and grow professionally. Additionally, I am prepared to face new challenges and
+          <span className="text-highlighted"> exceed expectations</span>.
         </p>
       </div>
       <div className="d-flex">
         <Hover3DEffect
           className="py-4 px-5 mt-5"
-          text="Confira Meus Certificados!"
+          text="Check My Certificates!"
           link="https://docs.google.com/document/d/1x0tm0wLbqmLst5LkGAVdMPnpKwarnJB3ZHuVG_nWBuU/edit?usp=sharing"
         />
       </div>
