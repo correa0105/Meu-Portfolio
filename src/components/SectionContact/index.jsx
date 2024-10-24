@@ -30,16 +30,16 @@ export default function SectionContact() {
   });
   return (
     <Section id="Contact" ref={sectionRef} className="d-flex flex-column align-items-center p-0 mx-auto">
-      <Title className="d-flex justify-content-center">Qual o Próximo Passo?</Title>
-      <h3 className="mt-5">Fale Comigo!</h3>
+      <Title className="d-flex justify-content-center">Whats the Next Step?</Title>
+      <h3 className="mt-5">Talk to Me!</h3>
       <p className="mt-4">
-        Minha caixa de entrada está sempre aberta para receber mensagens. Se você tiver alguma dúvida, uma proposta interessante ou simplesmente
-        quiser dizer oi, ficarei feliz em receber sua mensagem e farei o meu melhor para responder o mais rapidamente possível!
+        My inbox is always open to receive messages. If you have any questions, an interesting proposal, or just want to say hi, I would be happy to
+        hear from you and will do my best to respond as quickly as possible!
       </p>
       <Hover3DEffect
         link="https://api.whatsapp.com/send?phone=5551997292242&text=Ol%C3%A1%2C%20entrei%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio%2C%20gostaria%20de%20falar%20sobre%3A"
         className="py-4 px-5 mt-5"
-        text="Diga Olá!"
+        text="Say Hello!"
       />
     </Section>
   );

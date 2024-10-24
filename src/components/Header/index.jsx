@@ -100,13 +100,13 @@ export default function Header() {
         </div>
         <nav className="d-flex gap-4 align-items-center nav-menu">
           <ol className="d-flex align-items-center gap-5 p-0 m-0">
-            <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
-            <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />
-            <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projetos" />
-            <ItemMenu onClick={scrollToContact} className="item-menu" text="Contato" />
+            <ItemMenu onClick={scrollToAbout} className="item-menu" text="About" />
+            <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experience" />
+            <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projects" />
+            <ItemMenu onClick={scrollToContact} className="item-menu" text="Contact" />
           </ol>
           <div className="d-flex" ref={buttonRef}>
-            <Hover3DEffect className="ms-5 py-3 px-4" text="Curriculo" link="LucasCV.pdf" />
+            <Hover3DEffect className="ms-5 py-3 px-4" text="Resume" link="LucasCV.pdf" />
           </div>
         </nav>
       </div>
@@ -114,17 +114,17 @@ export default function Header() {
         <Container>
           <Navbar.Brand className="d-flex align-items-center gap-2">
             <div className="d-flex" ref={buttonRef}>
-              <Hover3DEffect className="py-2 px-3" text="Curriculo" link="LucasCV.pdf" />
+              <Hover3DEffect className="py-2 px-3" text="Resume" link="LucasCV.pdf" />
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="w-100 py-4">
               <ol className="d-flex flex-column align-items-center gap-5 p-0 m-0">
-                <ItemMenu onClick={scrollToAbout} className="item-menu" text="Sobre" />
-                <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experiência" />
-                <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projetos" />
-                <ItemMenu onClick={scrollToContact} className="item-menu" text="Contato" />
+                <ItemMenu onClick={scrollToAbout} className="item-menu" text="About" />
+                <ItemMenu onClick={scrollToExperience} className="item-menu" text="Experience" />
+                <ItemMenu onClick={scrollToProjects} className="item-menu" text="Projects" />
+                <ItemMenu onClick={scrollToContact} className="item-menu" text="Contact" />
               </ol>
             </Nav>
           </Navbar.Collapse>

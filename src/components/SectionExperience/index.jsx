@@ -57,7 +57,7 @@ export default function App() {
   return (
     <Section id="Experience" className="d-flex flex-column justify-content-center mx-auto" ref={sectionRef}>
       <div className="d-flex" ref={headingRef}>
-        <HeadingSection text="Experiência" />
+        <HeadingSection text="Experience" />
       </div>
       <Container className="mt-5">
         <MenuContainer>
@@ -80,32 +80,32 @@ export default function App() {
         </MenuContainer>
         <Content ref={contentRef}>
           {selectedMenuItem === 'Klassmatt' && (
-            <Work date="Julho de 2024 - Atualmente" office="Estagio Desenvolvedor" company="@ Klassmatt">
-              <WorkParagraphy text="Implementação de funcionalidades e correções de bugs em aplicações escritas em VB, JavaScript e C#, atualizações de registro no banco de dados e criações de procedures." />
-              <WorkParagraphy text="Criação de procedures, relatórios, documentação e participação nas sprints." />
+            <Work date="July 2024 - Present" office="Intern Developer" company="@ Klassmatt">
+              <WorkParagraphy text="Implementation of features and bug fixes in applications written in VB, JavaScript, and C#, database record updates, and creation of procedures." />
+              <WorkParagraphy text="Creation of procedures, reports, documentation, and participation in sprints." />
             </Work>
           )}
           {selectedMenuItem === 'Cubic Solutions' && (
-            <Work date="Julho de 2023 - Abril de 2024" office="Gestor de TI" company="@ Cubic Solutions">
-              <WorkParagraphy text="Abrir minha empresa de infraestrutura de TI marcou minha carreira. Aprendi a importância da comunicação eficaz, da adaptação rápida às demandas dos clientes e da gestão eficiente de recursos." />
-              <WorkParagraphy text="Implementei sistemas de controle de acessos, realizei manutenção de hardware, instalei e gerenciei redes, servidores e roteamento, proporcionando uma infraestrutura robusta. Também implementei sistemas de ponto eletrônico e desenvolvi software personalizado, adaptando soluções às necessidades específicas dos clientes para otimizar processos e aumentar a produtividade." />
+            <Work date="July 2023 - April 2024" office="IT Manager" company="@ Cubic Solutions">
+              <WorkParagraphy text="Opening my IT infrastructure company marked a turning point in my career. I learned the importance of effective communication, quick adaptation to client demands, and efficient resource management." />
+              <WorkParagraphy text="I implemented access control systems, performed hardware maintenance, installed and managed networks, servers, and routing, providing a robust infrastructure. I also implemented electronic timekeeping systems and developed custom software, tailoring solutions to the specific needs of clients to optimize processes and increase productivity." />
             </Work>
           )}
           {selectedMenuItem === 'Usina do Corpo' && (
-            <Work date="Outubro de 2019 - Março de 2023" office="Analista de Sistemas" company="@ Usina Do Corpo">
-              <WorkParagraphy text="Gerenciei toda a rede de computadores, implementei novos sistemas e resolvi problemas operacionais usando tecnologia avançada. Minhas responsabilidades incluíam a manutenção de hardware, controle de acesso com catracas eletrônicas e gerenciamento de servidor." />
-              <WorkParagraphy text="Além disso, cuidei da manutenção do servidor Apache e desenvolvi soluções web utilizando HTML, CSS e JavaScript. Minha experiência em redes de computadores foi fundamental para assegurar a conectividade e a eficiência das operações diárias da empresa." />
+            <Work date="October 2019 - March 2023" office="Systems Analyst" company="@ Usina Do Corpo">
+              <WorkParagraphy text="I managed the entire computer network, implemented new systems, and resolved operational issues using advanced technology. My responsibilities included hardware maintenance, access control with electronic turnstiles, and server management." />
+              <WorkParagraphy text="Additionally, I maintained the Apache server and developed web solutions using HTML, CSS, and JavaScript. My experience in computer networks was essential to ensure connectivity and the efficiency of the company's daily operations." />
             </Work>
           )}
           {selectedMenuItem === 'InterCement' && (
-            <Work date="Novembro de 2018 - Outubro de 2019" office="Aux. Op. Manutenção" company="@ InterCement">
-              <WorkParagraphy text="Como auxiliar de operações de manutenção, adquiri habilidades em automação de escritório e elaboração de relatórios, otimizando processos e aumentando a produtividade. Trabalhei com o sistema SAP, amplamente usado em empresas multinacionais para integrar processos de negócios." />
-              <WorkParagraphy text="Trabalhar em uma empresa multinacional ampliou minha visão do ambiente corporativo, fortalecendo minha postura profissional. Aprendi a enfrentar desafios complexos, trabalhar em equipe e valorizar a organização e precisão nos processos. Essa experiência foi essencial para meu crescimento profissional e aprimoramento no mundo corporativo." />
+            <Work date="November 2018 - October 2019" office="Maintenance Operations Assistant" company="@ InterCement">
+              <WorkParagraphy text="As a maintenance operations assistant, I acquired skills in office automation and report creation, optimizing processes and increasing productivity. I worked with the SAP system, widely used in multinational companies to integrate business processes." />
+              <WorkParagraphy text="Working in a multinational company broadened my perspective of the corporate environment and strengthened my professional demeanor. I learned to tackle complex challenges, work as part of a team, and value organization and precision in processes. This experience was essential for my professional growth and development in the corporate world." />
             </Work>
           )}
           {selectedMenuItem === 'Autônomo' && (
-            <Work date="2016 - Novembro de 2019" office="Técnico de Informática" company="@ Autônomo">
-              <WorkParagraphy text="Durante minha fase como autônomo, atuei como técnico em informática, o que me proporcionou uma imersão profunda no mundo da tecnologia. Foi nesse período que desenvolvi um forte interesse pela informática, ao lidar com uma variedade de problemas e soluções em ambientes diversos. Como técnico, tive a oportunidade de trabalhar de forma independente, o que me permitiu explorar diferentes aspectos da área e aprimorar minhas habilidades de resolução de problemas." />
+            <Work date="January 2016 - November 2019" office="IT Technician" company="@ Freelancer">
+              <WorkParagraphy text="During my time as a freelancer, I worked as an IT technician, which provided me with a deep immersion in the world of technology. It was during this period that I developed a strong interest in IT by dealing with a variety of problems and solutions in different environments. As a technician, I had the opportunity to work independently, allowing me to explore different aspects of the field and enhance my problem-solving skills." />
             </Work>
           )}
         </Content>

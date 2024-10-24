@@ -52,21 +52,21 @@ export default function SectionProjects() {
   return (
     <Section id="Projects" ref={sectionRef} className="d-flex flex-column p-0 mx-auto">
       <div className="d-flex" ref={headingRef}>
-        <HeadingSection text="Meus Projetos" />
+        <HeadingSection text="My Projects" />
       </div>
       <div className="paragraphy-projects mt-4">
         <p>
-          Tenho mais de 60 repositórios no GitHub que cobrem tópicos essenciais para o desenvolvimento de software, incluindo padrões de projeto,
-          técnicas de desenvolvimento e aplicativos funcionais. Esses repositórios oferecem desde práticas recomendadas para código limpo até
-          estratégias avançadas de otimização e exemplos práticos em diversas linguagens e plataformas.
+          I have over 60 repositories on GitHub covering essential topics for software development, including design patterns, development techniques,
+          and functional applications. These repositories provide everything from best practices for clean code to advanced optimization strategies
+          and practical examples in various languages and platforms.
         </p>
-        <span className="text-highlighted">Você pode verificar alguns abaixo</span>
+        <span className="text-highlighted">You can check some below.</span>
       </div>
       <ul className="row p-0 mt-5" ref={listRef}>
         <li className="p-3 col-12 col-sm-6 col-md-4">
           <Card
             title="ESLint/Prettier - Defaults"
-            text="Ao criar um pacote de padrões para o Prettier e ESLint, pude garantir uma formatação uniforme em todo o meu código, independentemente da linguagem ou tecnologia utilizada."
+            text="By creating a set of configurations for Prettier and ESLint, I was able to ensure consistent formatting across all my code, regardless of the language or technology used."
             technologies={['JavaScript', 'TypeScript', 'Node', 'React']}
             gitHub="https://github.com/correa0105/ESLint-Prettier-Defaults"
           />
@@ -74,7 +74,7 @@ export default function SectionProjects() {
         <li className="p-3 col-12 col-sm-6 col-md-4">
           <Card
             title="Pomodoro APP"
-            text="Um software simples, mas essencial, baseado na técnica Pomodoro para gerenciamento do tempo, ajudando-me a equilibrar estudos, trabalho e lazer em minha rotina diária"
+            text="A simple yet essential software based on the Pomodoro technique for time management, helping me balance studies, work, and leisure in my daily routine."
             technologies={['TypeScript', 'Node', 'React']}
             gitHub="https://github.com/correa0105/TS-PomodoroAPP"
           />
@@ -82,7 +82,7 @@ export default function SectionProjects() {
         <li className="p-3 col-12 col-sm-6 col-md-4">
           <Card
             title="MyMoney"
-            text="Um software para controle de contas pessoais, gerenciamento de despesas, geração de relatórios financeiros e uma dashboard simples e eficiente."
+            text="Software for personal account management, expense tracking, financial report generation, and a simple, efficient dashboard."
             technologies={['JavaScript', 'Node', 'React', 'MySQL']}
             gitHub="https://github.com/correa0105/MyMoney-ProjetoPessoal"
           />
@@ -90,30 +90,30 @@ export default function SectionProjects() {
         <li className="p-3 col-12 col-sm-6 col-md-4">
           <Card
             title="Amigos Peludos"
-            text="Software completo para adoção de pets, permitindo agendar e confirmar visitas, além de realizar a adoção."
+            text="A complete software for pet adoption, allowing users to schedule and confirm visits, as well as facilitate the adoption process."
             technologies={['JavaScript', 'Node', 'React', 'MongoDB']}
-            gitHub="https://github.com/correa0105/MyMoney-ProjetoPessoal"
+            gitHub="https://github.com/correa0105/APIRestfulNode-FrontReact-AdopterPet"
           />
         </li>
         <li className="p-3 col-12 col-sm-6 col-md-4">
           <Card
             title="TI System"
-            text="Software para controle de chamados, agendamento de visitas e gerenciamento de compras, amplamente utilizado durante minha experiência na Usina do Corpo."
+            text="Software for ticket management, visit scheduling, and purchase management, widely used during my experience at Usina do Corpo."
             technologies={['JavaScript', 'Node', 'EJS', 'MySQL']}
-            gitHub="https://github.com/correa0105/MyMoney-ProjetoPessoal"
+            gitHub="https://github.com/correa0105/TISystem-ProjetoPessoal"
           />
         </li>
         <li className="p-3 col-12 col-sm-6 col-md-4">
           <Card
             title="Pensamentos"
-            text="Software que permite registrar pensamentos em uma linha do tempo, funcionando como uma espécie de blog."
+            text="Software that allows users to record thoughts on a timeline, functioning as a sort of blog."
             technologies={['JavaScript', 'Node', 'EJS', 'MySQL']}
-            gitHub="https://github.com/correa0105/MyMoney-ProjetoPessoal"
+            gitHub="https://github.com/correa0105/Pensamentos-NodeJS"
           />
         </li>
       </ul>
       <div className="d-flex justify-content-end" ref={viewMoreRef}>
-        <Hover3DEffect className="px-4 py-3" link="https://github.com/correa0105?tab=repositories" text="Veja Mais..." />
+        <Hover3DEffect className="px-4 py-3" link="https://github.com/correa0105?tab=repositories" text="See more..." />
       </div>
     </Section>
   );

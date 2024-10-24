@@ -30,14 +30,14 @@ export default function SectionFooter() {
     <Section ref={sectionRef} className="d-flex justify-content-center p-0 mx-auto">
       <div className="d-flex flex-column align-items-center">
         <span>
-          Projetado:{' '}
+          Designed by:{' '}
           <a href="https://www.linkedin.com/in/bchiang7/" target="_blank" rel="noreferrer">
             {' '}
             Britanny Chiang
           </a>
         </span>
         <span>
-          Desenvolvido por
+          Developed by:
           <a href="https://www.linkedin.com/in/correalucas0105/" target="_blank" rel="noreferrer">
             {' '}
             Lucas Corrêa

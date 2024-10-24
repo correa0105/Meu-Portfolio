@@ -30,17 +30,17 @@ export default function SectionAbout() {
   return (
     <Section id="About" className="d-flex flex-column p-0 my-0 mx-auto" ref={sectionRef}>
       <div className="d-flex" ref={headingRef}>
-        <HeadingSection text="Sobre Mim" className="mb-2" />
+        <HeadingSection text="About Me" className="mb-2" />
       </div>
       <div className="row mt-5 align-items-start">
         <div className="col-md-7">
           <p>
-            Olá! Meu nome é Lucas e <span className="text-highlighted">desde 2022</span> me dedico à programação. Com mais de{' '}
-            <span className="text-highlighted">3 mil horas de experiência</span>, desenvolvi diversas aplicações e fundei uma empresa de
-            Infraestrutura de TI, atendendo 4 clientes e 28 lojas.
+            Hello! My name is Lucas, and <span className="text-highlighted">since 2022</span>, I have been dedicated to programming. With over{' '}
+            <span className="text-highlighted">3,000 hours of experience</span>, I have developed various applications and founded an IT
+            Infrastructure company, serving 4 clients and 28 stores.
           </p>
-          <p>Essa experiência ampliou minha compreensão das necessidades empresariais e me permitiu entregar soluções de alto valor agregado.</p>
-          <p>Atualmente, foco na criação de soluções dinâmicas e eficientes que se adaptam às demandas do mercado, sempre buscando inovação.</p>
+          <p>This experience has broadened my understanding of business needs and allowed me to deliver high-value solutions.</p>
+          <p>Currently, I focus on creating dynamic and efficient solutions that adapt to market demands, always seeking innovation.</p>
           <ul className="grid-skills">
             <li>
               <BiSolidRightArrow fontSize={10} color="#ff631a" />
